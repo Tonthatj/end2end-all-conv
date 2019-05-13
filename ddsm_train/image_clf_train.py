@@ -105,7 +105,7 @@ def run(train_dir, val_dir, test_dir, patch_model_state=None, resume_from=None,
         print( "Loading raw train set into RAM.",
         sys.stdout.flush())
         raw_set = load_dat_ram(raw_generator, raw_generator.nb_sample)
-        print( "Done."; sys.stdout.flush())
+        print( "Done."); sys.stdout.flush()
         print( "Create generator for train set")
         train_generator = train_imgen.flow(
             raw_set[0], raw_set[1], batch_size=train_bs, 
@@ -133,7 +133,7 @@ def run(train_dir, val_dir, test_dir, patch_model_state=None, resume_from=None,
         print( "Loading validation set into RAM.",
         sys.stdout.flush())
         validation_set = load_dat_ram(validation_set, validation_set.nb_sample)
-        print( "Done."; sys.stdout.flush())
+        print( "Done."); sys.stdout.flush()
 
     # ==================== Model training ==================== #
     # Do 2-stage training.
